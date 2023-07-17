@@ -2,11 +2,13 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
- * Return: Always 1 (Success)
+ * main - program that prints exactly ...
+ *
+ * Return: 1
  */
 int main(void)
 {
-	putchar("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	write(STDOUT_FILENO, "and that piece of art is useful
+			\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
