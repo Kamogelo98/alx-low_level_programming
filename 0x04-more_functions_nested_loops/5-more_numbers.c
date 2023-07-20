@@ -7,9 +7,11 @@
 
 void more_numbers(void)
 {
-	int k, m;
+	int k;
 
-	for (m = 0; m <= 9; m++)
+	int m = 0;
+
+	while (m <= 9)
 	{
 		for (k = 0; k <= 14; k++)
 		{
@@ -20,6 +22,7 @@ void more_numbers(void)
 			_putchar((k % 10) + '0');
 		}
 
+		m++;
 		_putchar('\n');
 	}
 }
