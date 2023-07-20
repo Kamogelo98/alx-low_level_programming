@@ -3,7 +3,6 @@
  * print_most_numbers - print most of the numbers
  * Return: not returned values
  */
-
 void print_most_numbers(void)
 {
 	int i;
