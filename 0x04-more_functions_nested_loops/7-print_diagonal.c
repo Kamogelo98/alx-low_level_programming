@@ -5,9 +5,11 @@
  * @n: number of times the \ character is printed
  *
  */
+
 void print_diagonal(int n)
 {
-	int x, y;
+	int a;
+	int b;
 
 	if (n <= 0)
 	{
@@ -15,9 +17,9 @@ void print_diagonal(int n)
 	}
 	else
 	{
-		for (y = 0; y < n; y++)
+		for (a = 0; a < n; a++)
 		{
-			for (x = 0; x < n; x++)
+			for (b = 0; b < a; b++)
 			{
 				_putchar(' ');
 			}
