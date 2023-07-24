@@ -1,25 +1,22 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * rev_string - reverse string, followed by a new line,
- *
- * @s: the parameter
- *
- * Return: on success,
- *         on error, -1 is returned, and errno is set appropriately
+ * rev_string - This will help to reverse a string
+ * @s: a string to be checked
  */
 
 void rev_string(char *s)
 {
-	int i;
+	int len = 0, index = 0;
 
-	for (i = 0; i < (int)(strlen / 2); i++)
+	char tmp;
+
+	while (s[index++])
+		len++;
+	for (index = len - 1; index >= len / 2; index--)
 	{
-		char temp;
-
-		temp = s[i];
-		s[i] = s[strlen - 1 - i];
-		s[strlen - 1 - i] = temp;
+		tmp = s[index];
+		s[index] = s[len - index - 1];
+		s[len - index - 1] = tmp;
 	}
 }
