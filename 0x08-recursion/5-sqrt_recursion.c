@@ -22,3 +22,8 @@ int _sqrt_recursion(int n, int start, int end)
 
 	return (_sqrt_recursion(n, start + 1, end));
 			}
+
+int sqrt_recursion(int n)
+{
+	return (_sqrt_recursion(n, 0, n));
+}
